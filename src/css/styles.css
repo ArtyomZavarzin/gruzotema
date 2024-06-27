@@ -104,8 +104,8 @@ body main {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  margin-right: 2px;
-  margin-left: 2px;
+  margin-right: 1px;
+  margin-left: 1px;
 }
 .menu .menu__item a:active,
 .menu .menu__item a:hover,
