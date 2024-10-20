@@ -1,20 +1,15 @@
 window.addEventListener('DOMContentLoaded', function () {
   const tl = gsap.timeline();
-  tl.from('.header-logo', { opacity: 0, duration: 1 }, 0.5)
-    .from(
-      '.video-block .menu__item',
-      { y: -50, opacity: 0, duration: 1, stagger: 0.15 },
-      1
-    )
+  tl.from('.header-logo', { y: -50, opacity: 0, duration: 1 }, 0.5)
+    .from('.video-block .menu__item', { y: -50, opacity: 0, duration: 1 }, 0.5)
     .from(
       '.video-block .menu__phone > div > *',
       {
         y: -50,
         opacity: 0,
-        duration: 0.5,
-        stagger: 0.15,
+        duration: 1,
       },
-      0.8
+      0.5
     )
     .from(
       '.video-block__content .text-logo',
@@ -63,8 +58,8 @@ window.addEventListener('DOMContentLoaded', function () {
       end: 'top center',
       scrub: true,
     },
-    scale: 0.4,
-    stagger: 0.25,
+    x: -600,
+    // stagger: 0.25,
   });
 
   gsap.from('.main-fourth-section_advanteges > *', {
