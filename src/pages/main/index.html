@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="../../css/styles.css" />
 
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./animations.js"></script>
   </head>
   <body>
     <div class="video-block">
@@ -40,7 +43,7 @@
           <div
             class="row gx-12 align-items-center justify-content-center justify-content-lg-start"
           >
-            <a href="index.html" class="col-auto text-logo">
+            <a href="index.html" class="col-auto text-logo header-logo">
               Н<span class="custom-letter">Е<span></span></span> ГАБАРИТ ТГК
             </a>
             <div
@@ -62,7 +65,17 @@
               </div>
             </div>
             <div class="col-auto menu__phone d-none d-xl-block">
-              +7 (913) 880 25-99
+              <div class="d-flex gap-3">
+                <span>+7 (913) 880 25-99</span>
+                <div class="menu__socials">
+                  <a href="mailto:oootgk2017@yandex.ru?subject=Здравствуйте! Обращаюсь с вашего сайта." target="_blank" rel="nofollow" aria-label="e-mail" title="e-mail">
+                    <img style="height: 0.8em;" src="../../assets/images/mail.png" />
+                  </a>
+                  <a href="https://wa.me/79138037070?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B0%D1%8E%D1%81%D1%8C%20%D1%81%20%D0%B2%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0." target="_blank" rel="nofollow noopener" aria-label="WhatsApp" title="WhatsApp">
+                    <img src="../../assets/images/whatsapp.png" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -78,7 +91,7 @@
                 </span>
                 <span class="text-logo">ГРУЗОПЕРЕВОЗКИ</span>
               </div>
-              <div class="col-auto align-self-end">
+              <div class="col-auto align-self-end button-container">
                 <button
                   type="button"
                   class="request-btn w-100"
@@ -117,6 +130,7 @@
       </div> -->
       <div class="main-fourth-section">
         <div class="container mt-5">
+          <div class="main-fourth-section__blue-strip"></div>
           <div class="row gy-5 g-lg-5">
             <div class="col-12 col-lg-6 main-fourth-section__text">
               <p class="main-fourth-section__text-title">
@@ -129,7 +143,7 @@
                 грузов автомобильным транспортом по территории России и СНГ.
               </p>
               <br />
-              <a href="">ПОДРОБНЕЕ О КОМПАНИИ</a>
+              <a href="about.html">ПОДРОБНЕЕ О КОМПАНИИ</a>
             </div>
             <div class="col-12 col-lg-6 d-flex flex-column align-items-end">
   
@@ -141,10 +155,10 @@
             </div>
           </div>
           <div class="row main-fourth-section_advanteges justify-content-start justify-content-sm-between g-4">
-            <div class="col-auto"><p>800+</p><span>завершенных сделок</span></div>
-            <div class="col-auto"><p>>13лет</p><span>опыта в сфере</span></div>
-            <div class="col-auto"><p>№1</p><span>в своем регионе</span></div>
-            <div class="col-auto"><p>350+</p><span>довольных клиентов</span></div>
+            <div class="col-auto"><p>800<span style="font-size: 0.9em; font-weight: 800;">+</span></p><span style="font-weight: 400;">завершенных сделок</span></div>
+            <div class="col-auto"><p><span style="font-size: 0.9em; font-weight: 800;">></span>13<span style="font-size: 0.7em; font-weight: 800;">лет</span></p><span style="font-weight: 400;">опыта в сфере</span></div>
+            <div class="col-auto"><p><span style="font-size: 0.7em; font-weight: 800;">№</span>1</p><span style="font-weight: 400;">в своем регионе</span></div>
+            <div class="col-auto"><p>350<span style="font-size: 0.9em; font-weight: 800;">+</span></p><span style="font-weight: 400;">довольных клиентов</span></div>
           </div>
         </div>
       </div>
@@ -207,24 +221,26 @@
     </div>
 
     <div class="sng-china-block">
-      <div class="container mt-3">
+      <div class="container mt-3 position-relative">
         <p class="sng-china-block__title">СНГ</p>
         <p class="sng-china-block__title red-text">КИТАЙ</p>
         <p class="sng-china-block__subtitle">ВОЗИМ ГРУЗЫ ПО ВСЕМУ СНГ И <span class="red-text">КИТАЮ</span></p>
         <button
-                  type="button"
-                  class="request-btn my-5"
-                  data-bs-toggle="modal"
-                  data-bs-target="#requestModal"
-                >
-                  <p class="title">ОСТАВЬТЕ ЗАЯВКУ</p>
-                </button>
+          type="button"
+          class="request-btn my-5"
+          data-bs-toggle="modal"
+          data-bs-target="#requestModal"
+        >
+          <p class="title">ОСТАВЬТЕ ЗАЯВКУ</p>
+        </button>
+
+        <div class="sng-china-block__planet-container"><img
+        src="../../assets/images/planet.png"
+        class="d-block"
+        alt="first track"
+        /></div>
       </div>
-      <div class="sng-china-block__planet-container"><img
-                src="../../assets/images/planet.png"
-                class="d-block"
-                alt="first track"
-              /></div>
+      
       
     </div>
 
@@ -246,7 +262,7 @@
           Мы сами обслуживаем свой транспорт, имея свои базы ремонта и обслуживания.
         </p>
 
-        <a class="see-btn mt-4 d-inline-block w-auto" href="technique.html">Смотреть нашу технику</a>
+        <a class="see-btn mt-4 d-inline-block w-auto" href="cargo.html">Смотреть нашу технику</a>
 
         <div class="row mt-5 justify-content-between">
           <div class="col-12 col-md-7">
@@ -334,13 +350,34 @@
             <span class="address">г. Томск пер. Карпосвкий 12</span>
           </div>
           <div class="col-auto social-media">
-            <img src="../../assets/images/tg.png" />
-            <img src="../../assets/images/inst.png" />
-            <img src="../../assets/images/mail.png" />
+            <a href="https://t.me/+79138037070" target="_blank" rel="nofollow noopener" aria-label="Telegram" title="Telegram">
+              <img src="../../assets/images/tg.png" />
+            </a>
+            <a href="https://wa.me/79138037070?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B0%D1%8E%D1%81%D1%8C%20%D1%81%20%D0%B2%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0." target="_blank" rel="nofollow noopener" aria-label="WhatsApp" title="WhatsApp">
+              <img src="../../assets/images/whatsapp.png" />
+            </a>
+            <a href="mailto:oootgk2017@yandex.ru?subject=Здравствуйте! Обращаюсь с вашего сайта." target="_blank" rel="nofollow" aria-label="e-mail" title="e-mail">
+              <img src="../../assets/images/mail.png" />
+            </a>
           </div>
           <div class="w-100"></div>
-          <div class="col-auto">2024 ООО Негабарит ТГК</div>
-          <div class="col-auto">Политика конфиденциальности</div>
+          <div class="col-6">
+            2024 ООО Негабарит ТГК</br></br>
+            ИНН 7017432682</br>
+            КПП 701701001</br>
+            ОГРН 1177031082865</br>
+            ОКПО 19663393
+          </div>
+          <div class="col-6 align-content-end" style="text-align: end;">
+            <a href="https://disk.yandex.ru/i/O3eFshl9VacUTQ" target="_blank" rel="noreferrer noopener">Скачать реквизиты</a>
+            <br>
+            <br>
+            <a href="https://sbis.ru/contragents/7017432682/701701001" target="_blank" rel="noreferrer noopener">Данные о компании на СБИС</a>
+            <br>
+            <br>
+            <a href="persondate.html" target="_blank">Политика конфиденциальности</a>
+            
+          </div>
         </div>
       </div>
     </footer>
