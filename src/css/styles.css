@@ -600,9 +600,9 @@ body::-webkit-scrollbar {
   line-height: 70px;
   margin-bottom: 0;
 }
-.main-fourth-section .main-fourth-section_advanteges span,
-.main-fifth-section .main-fourth-section_advanteges span {
-  font-size: 16px;
+.main-fourth-section .main-fourth-section_advanteges div > span,
+.main-fifth-section .main-fourth-section_advanteges div > span {
+  font-size: 24px;
   font-weight: 900;
 }
 
