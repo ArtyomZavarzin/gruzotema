@@ -29,16 +29,16 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
 
-    <script src="./index.js"></script>
+    <script src="../index.js"></script>
   </head>
   <body>
     <div class="container py-3 menu">
         <div
             class="row gx-12 align-items-center justify-content-center justify-content-lg-start"
           >
-            <a href="index" class="col-auto text-logo">
+            <a href="../main/" class="col-auto text-logo">
               Н<span class="custom-letter">Е<span></span></span> ГАБАРИТ ТГК
             </a>
             <div
@@ -46,16 +46,16 @@
             >
               <div class="row gx-3">
                 <div class="col-auto menu__item mx-lg-3">
-                  <a href="about">О нас</a>
+                  <a href="../about">О нас</a>
                 </div>
                 <div class="col-auto menu__item mx-lg-3">
-                  <a href="cargo">Виды грузов</a>
-                </div>
-                <div class="col-auto menu__item mx-lg-3  selected">
-                  <a href="contact">Контакты</a>
+                  <a href="../cargo">Виды грузов</a>
                 </div>
                 <div class="col-auto menu__item mx-lg-3">
-                  <a href="vacancies">Вакансии</a>
+                  <a href="../contact">Контакты</a>
+                </div>
+                <div class="col-auto menu__item mx-lg-3 selected">
+                  <a href="../vacancies">Вакансии</a>
                 </div>
               </div>
             </div>
@@ -64,10 +64,10 @@
                 <span>+7 (913) 880 25-99</span>
                 <div class="menu__socials">
                   <a href="mailto:oootgk2017@yandex.ru?subject=Здравствуйте! Обращаюсь с вашего сайта." target="_blank" rel="nofollow" aria-label="e-mail" title="e-mail">
-                    <img style="height: 0.8em;" src="../../assets/images/mail.png" />
+                    <img style="height: 0.8em;" src="../assets/images/mail.png" />
                   </a>
                   <a href="https://wa.me/79138037070?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B0%D1%8E%D1%81%D1%8C%20%D1%81%20%D0%B2%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0." target="_blank" rel="nofollow noopener" aria-label="WhatsApp" title="WhatsApp">
-                    <img src="../../assets/images/whatsapp.png" />
+                    <img src="../assets/images/whatsapp.png" />
                   </a>
                 </div>
               </div>
@@ -77,19 +77,60 @@
     </div>
     <main>
         <div class="container">
-            <h3>КОНТАКТЫ</h3>
-            <div class="row my-4 justify-content-between contact-block">
-                <div class="col-auto address">
-                    <span>Наш адрес:</span>
-                    г. Томск пер. Карпосвкий 12 
+            <h3>ВАКАНСИИ</h3>
+            <h1 class="mt-5">СТАНЬ ЧАСТЬЮ НАШЕЙ КОМАНДЫ</h1>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="vacancy-block mt-5">
+                        <form id="driversForm">
+                            <p>Принимаем на работу водителей категории&nbsp;Е</p>
+
+                            <label for="inputName1" class="col-form-label w-100">ФИО</label>
+                            <input id="inputName1" name="name" placeholder="Иванов Иван Иванович" />
+                            
+                            <label for="inputPhone1" class="col-form-label w-100">Номер телефона</label>
+                            <input id="inputPhone1" name="phone" placeholder="+7 000 000 00 00" />
+                            <p class="error-text" style="display: none;"></p>
+                            <button class="send-contact" type="submit">Отправить контакт</button>
+                        </form>
+                        
+                    </div>
+                    
                 </div>
-                <div class="col-auto phone">
-                    <span>+7 (913) 880 25-99</span>
+                <div class="col-lg-4">
+                    <div class="vacancy-block mt-5">
+                        <form id="logistsForm"><p>Принимаем на работу логистов</p>
+
+                        <label for="inputName2" class="col-form-label w-100">ФИО</label>
+                            <input id="inputName2" name="name" placeholder="Иванов Иван Иванович" />
+                            
+                            <label for="inputPhone2" class="col-form-label w-100">Номер телефона</label>
+                            <input id="inputPhone2" name="phone" placeholder="+7 000 000 00 00" />
+                            <p class="error-text" style="display: none;"></p>
+                            <button class="send-contact" type="submit">Отправить контакт</button>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="vacancy-block mt-5">
+                        <form id="accountantsForm">
+                            <p>Принимаем на работу бухгалтеров</p>
+
+                            <label for="inputName3" class="col-form-label w-100">ФИО</label>
+                            <input id="inputName3" name="name" placeholder="Иванов Иван Иванович" />
+                            
+                            <label for="inputPhone3" class="col-form-label w-100">Номер телефона</label>
+                            <input id="inputPhone3" name="phone" placeholder="+7 000 000 00 00" />
+                            <p class="error-text" style="display: none;"></p>
+                            <button class="send-contact" type="submit">Отправить контакт</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="map-container">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abe2ba3a1ea4ce7bd1affdde6fd9e414fe95691b84cfdad452ad964bc36922388&amp;source=constructor" width="100%" frameborder="0"></iframe>
-            </div>
+
+            
+            
         </div>
     </main>
     <footer>
@@ -97,7 +138,7 @@
         <div
             class="row gx-12 align-items-center justify-content-center justify-content-lg-start"
           >
-            <a href="index" class="col-auto text-logo">
+            <a href="../main/" class="col-auto text-logo">
               Н<span class="custom-letter">Е<span></span></span> ГАБАРИТ ТГК
             </a>
             <div
@@ -105,16 +146,16 @@
             >
               <div class="row gx-3">
                 <div class="col-auto menu__item mx-lg-3">
-                  <a href="about">О нас</a>
+                  <a href="../about">О нас</a>
                 </div>
                 <div class="col-auto menu__item mx-lg-3">
-                  <a href="cargo">Виды грузов</a>
+                  <a href="../cargo">Виды грузов</a>
                 </div>
                 <div class="col-auto menu__item mx-lg-3">
-                  <a href="contact">Контакты</a>
+                  <a href="../contact">Контакты</a>
                 </div>
                 <div class="col-auto menu__item mx-lg-3">
-                  <a href="vacancies">Вакансии</a>
+                  <a href="../vacancies">Вакансии</a>
                 </div>
               </div>
             </div>
@@ -133,13 +174,13 @@
           </div>
           <div class="col-auto social-media">
             <a href="https://t.me/+79138037070" target="_blank" rel="nofollow noopener" aria-label="Telegram" title="Telegram">
-              <img src="../../assets/images/tg.png" />
+              <img src="../assets/images/tg.png" />
             </a>
             <a href="https://wa.me/79138037070?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%20%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B0%D1%8E%D1%81%D1%8C%20%D1%81%20%D0%B2%D0%B0%D1%88%D0%B5%D0%B3%D0%BE%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0." target="_blank" rel="nofollow noopener" aria-label="WhatsApp" title="WhatsApp">
-              <img src="../../assets/images/whatsapp.png" />
+              <img src="../assets/images/whatsapp.png" />
             </a>
             <a href="mailto:oootgk2017@yandex.ru?subject=Здравствуйте! Обращаюсь с вашего сайта." target="_blank" rel="nofollow" aria-label="e-mail" title="e-mail">
-              <img src="../../assets/images/mail.png" />
+              <img src="../assets/images/mail.png" />
             </a>
           </div>
           <div class="w-100"></div>
@@ -163,6 +204,27 @@
         </div>
       </div>
     </footer>
+
+
+    <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
+      <div
+        id="liveToast"
+        class="toast text-white bg-success"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body fw-bold">Заявка успешно отправлена</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
