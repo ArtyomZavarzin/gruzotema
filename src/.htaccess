@@ -1,12 +1,3 @@
 RewriteEngine On
-
-# Удаление расширения .html
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html [L]
-
-# Удаление src/pages/main/ из URL
-RewriteCond %{REQUEST_URI} !^/src/pages/main/
-RewriteRule ^about$ /src/pages/main/about.html [L]
-
-# Пример правила для других страниц
-RewriteRule ^(.*)$ /src/pages/main/$1.html [L]
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]

@@ -48,7 +48,7 @@
                 <div class="col-auto menu__item mx-lg-3">
                   <a href="../about">О нас</a>
                 </div>
-                <div class="col-auto menu__item mx-lg-3 selected">
+                <div class="col-auto menu__item mx-lg-3">
                   <a href="../cargo">Виды грузов</a>
                 </div>
                 <div class="col-auto menu__item mx-lg-3">
@@ -75,73 +75,51 @@
           </div>
         </div>
     </div>
-
     <main>
-      <div class="container" style="overflow: hidden;">
-        <div class="row g-5">
-          <div class="col-12 col-md-6">
-            <h3>МЫ ПЕРЕВОЗИМ БОЛЕЕ 50 ВИДОВ ГРУЗОВ</h3>
-            <h4 style="font-weight: 600;" class="mt-5">Строительная и спецтехника</h4>
-            <h4 style="font-weight: 600;" class="mt-3">Сельскохозяйственная техника</h4>
-            <h4 style="font-weight: 600;" class="mt-3">Промышленное оборудование</h4>
-            <h4 style="font-weight: 600;" class="mt-3">Металлоконструкции</h4>
-            <h4 style="font-weight: 600;" class="mt-3">Водный транспорт</h4>
-          </div>
-          <div class="col-12 col-md-6" style="display: flex; flex-direction: column; justify-content: space-between">
-            <h4 style="font-weight: 900; line-height: 1.7em;">Имеем свой собственный многофункциональный автопарк, позволяющий быстро и оперативно справлятся с задачами любой сложности.</h4>
-            <button
-                type="button"
-                class="request-btn w-100 mt-4"
-                data-bs-toggle="modal"
-                data-bs-target="#requestModal"
-              >
-                <p class="title">ОСТАВЬТЕ ЗАЯВКУ</p>
-              </button>
-          </div>
+        <div class="container">
+            <h3>НАША ТЕХНИКА</h3>
+            <h4 style="font-weight: 600;" class="mt-5">Виды прицепов</h4>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="../assets/images/pricep1.png"
+                        class="d-block w-100"
+                        alt="track"
+                    />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="../assets/images/pricep2.png"
+                        class="d-block w-100"
+                        alt="track"
+                    />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="../assets/images/pricep3.png"
+                        class="d-block w-100"
+                        alt="track"
+                    />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="../assets/images/pricep4.png"
+                        class="d-block w-100"
+                        alt="track"
+                    />
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="../assets/images/pricep5.png"
+                        class="d-block w-100"
+                        alt="track"
+                    />
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-6"><p style="font-weight: 900; font-size: 24px;">Мы бережно относимся к совему автопарку, имеем свои базы обслуживания и ремонта техники.</p></div>
+                <div class="col-12 col-md-6"><img src="../assets/images/car2.jpg"
+                        class="d-block w-100"
+                        alt="track"
+                    /></div>
+            </div>
         </div>
-      </div>
-      <div class="photo-allWidth">
-        <div id="carouselExampleCaptions" class="carousel slide mt-5">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="../assets/images/track1png.png"
-              class="d-block w-100"
-              alt="first track"
-            />
-          </div>
-          <div class="carousel-item active">
-            <img
-              src="../assets/images/track1png.png"
-              class="d-block w-100"
-              alt="first track"
-            />
-          </div>
-        </div>
-
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Предыдущий</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Следующий</span>
-        </button>
-      </div> 
-      </div>
-      
     </main>
-
     <footer>
       <div class="container py-3 menu">
         <div
@@ -213,74 +191,6 @@
         </div>
       </div>
     </footer>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="requestModal"
-      tabindex="-1"
-      aria-labelledby="requestModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-          <div class="modal-header d-flex justify-content-center">
-            <h5 class="modal-title" id="requestModalLabel">
-              Оставьте заявку на консультацию
-            </h5>
-          </div>
-
-          <form id="request-form">
-            <div class="modal-body px-5">  
-              <div class="row g-4">
-                <div class="col-3">
-                  <label for="inputName" class="col-form-label">ФИО</label>
-                </div>
-                <div class="col-9">
-                  <input id="inputName" class="form-control" />
-                </div>
-                <div class="col-3">
-                  <label for="inputPhone" class="col-form-label">Телефон</label>
-                </div>
-                <div class="col-9">
-                  <input type="tel" id="inputPhone" class="form-control" />
-                </div>
-              </div>
-              <p class="error-text" style="display: none;"></p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="close-btn" data-bs-dismiss="modal">
-                Закрыть
-              </button>
-              <button type="submit" class="send-btn" id="send-btn-id">
-                Отправить
-              </button>
-            </div>
-          </form>
-
-          
-        </div>
-      </div>
-    </div>
-    <div class="position-fixed bottom-0 start-0 p-3" style="z-index: 11">
-      <div
-        id="liveToast"
-        class="toast text-white bg-success"
-        role="alert"
-        aria-live="assertive"
-        aria-atomic="true"
-      >
-        <div class="d-flex">
-          <div class="toast-body fw-bold">Заявка успешно отправлена</div>
-          <button
-            type="button"
-            class="btn-close btn-close-white me-2 m-auto"
-            data-bs-dismiss="toast"
-            aria-label="Close"
-          ></button>
-        </div>
-      </div>
-    </div>
 
 
     <script
